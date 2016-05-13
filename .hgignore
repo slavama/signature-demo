@@ -1,0 +1,29 @@
+syntax:glob
+
+# PyCharm
+.idea
+.orig
+
+# Python
+*.pyc
+*.egg-info
+*.pot
+__pycache__
+
+# Tests
+.cache
+reports
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Virtual environment
+venv
+
+# Node
+node_modules
+
+# Project
+cert.key
+out.xml
