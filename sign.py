@@ -137,7 +137,7 @@ def main():
     sign_data = dict(
         signed_id=args.id,
         signature_id=uuid.uuid1(),
-        signing_time=datetime.now(tz=pytz.timezone('Asia/Krasnoyarsk')).isoformat(),
+        signing_time=datetime.now(tz=pytz.timezone('Asia/Krasnoyarsk')).replace(microsecond=0).isoformat(),
         x509_issuer_name=get_issuer(key_file),
         x509_sn=get_serial(key_file)
     )
